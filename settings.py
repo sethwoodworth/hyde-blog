@@ -11,10 +11,10 @@ TMP_DIR = here('deploy_tmp')
 BACKUPS_DIR = here('backups')
 BACKUP = False
 
-SITE_ROOT = "/"
-SITE_WWW_URL = "http://www.yoursite.com"
-SITE_NAME = "Your Site"
-SITE_AUTHOR = "Your Name"
+SITE_ROOT = "/blog"
+SITE_WWW_URL = "http://sethish.com/"
+SITE_NAME = "awesome quotient"
+SITE_AUTHOR = "Seth Woodworth"
 
 #URL Configuration
 GENERATE_ABSOLUTE_FS_URLS = False

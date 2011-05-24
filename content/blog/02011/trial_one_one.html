@@ -1,0 +1,37 @@
+{% extends "_post.html" %}
+
+{%load webdesign %}
+
+{%hyde
+    title: This is a trial of the emergency blogging system
+    created: 2011-05-15 22:07:29 
+%}
+
+{% block article %}
+
+{%refer to "../2009/introducing-hyde.html" as hyde_intro%}
+{{hyde_intro.test_reference}}
+
+{%article%}
+
+{% excerpt %}
+
+### Exceprt title, header?? ###
+
+some text for the excerpt
+{%endexcerpt%}
+
+### Some other header or something ###
+
+other text
+
+other text
+
+even more text
+
+### Another subheader ###
+
+end of the article
+{%endarticle%}
+
+{% endblock %}

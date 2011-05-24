@@ -12,7 +12,7 @@ TMP_DIR =       here('deploy_tmp')
 BACKUPS_DIR =   here('backups')
 BACKUP = False
 
-SITE_ROOT =     "blog/"
+SITE_ROOT =     "/"
 SITE_WWW_URL =  "http://sethish.com"
 SITE_NAME =     "Awesome Quotient"
 SITE_AUTHOR =   "Seth Woodworth"

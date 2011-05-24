@@ -2,19 +2,19 @@ import os
 here = lambda *x: os.path.join(os.path.abspath(os.path.dirname(__file__)), *x)
 
 #Directories
-LAYOUT_DIR = here('layout')
-CONTENT_DIR = here('content')
-MEDIA_DIR = here('media')
-DEPLOY_DIR = here('deploy')
-TMP_DIR = here('deploy_tmp')
+LAYOUT_DIR =    here('layout')
+CONTENT_DIR =   here('content')
+MEDIA_DIR =     here('media')
+DEPLOY_DIR =    here('deploy')
+TMP_DIR =       here('deploy_tmp')
 
-BACKUPS_DIR = here('backups')
+BACKUPS_DIR =   here('backups')
 BACKUP = False
 
-SITE_ROOT = "/"
-SITE_WWW_URL = "http://www.yoursite.com"
-SITE_NAME = "Your Site"
-SITE_AUTHOR = "Your Name"
+SITE_ROOT =     "blog/"
+SITE_WWW_URL =  "http://sethish.com"
+SITE_NAME =     "Awesome Quotient"
+SITE_AUTHOR =   "Seth Woodworth"
 
 #URL Configuration
 GENERATE_ABSOLUTE_FS_URLS = False
@@ -28,7 +28,7 @@ GENERATE_ABSOLUTE_FS_URLS = False
 # to map the clean urls to the actual html files.  The HtaccessGenerator site
 # post processor is capable of automatically generating the necessary
 # RewriteRules for use with Apache.
-GENERATE_CLEAN_URLS = False
+GENERATE_CLEAN_URLS = True
 
 # A list of filenames (without extensions) that will be considered listing
 # pages for their enclosing folders.

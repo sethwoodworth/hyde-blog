@@ -43,6 +43,8 @@ a { color: #55757B; }
     color: #55757B;
 }
 
+#blog-head p { font-size: 27px; text-align: center }
+
 .context-nav,
 ul.breadcrumbs {
     list-style-type: none;
@@ -51,6 +53,7 @@ ul.breadcrumbs {
 }
 
 .context-nav { right:0; }
+
 
 .breadcrumbs li { display: inline; }
 .breadcrumbs a {

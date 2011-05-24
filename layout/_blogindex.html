@@ -1,10 +1,12 @@
 {% extends "skeleton/_base.html" %}
 
 {% block content %}
-  <div class="index">
+  <div id="blog-head">
   {% filter typogrify %}
     <p>Sometimes, I try to blog.</p>
     <p>When I do so, I do so here.</p>
   {% endfilter %}
-  </div> <!-- index -->
+  </div> <!-- blog-head -->
+  {% block content_body %}
+  {% endblock %}
 {% endblock %}

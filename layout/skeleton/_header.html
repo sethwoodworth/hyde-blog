@@ -1,4 +1,24 @@
-<div id="header">
+<div id="header" class="sg-35">
+  <table width="100%">
+    <tr> <td>
+      <h1>Seth Woodworth<br />
+      - Seth(ish)
+      </h1>
+    </td>
+    <td align="right">
+      {% block cats %}
+      <div id="cats" class="borderLeft">
+        <span class="lang sg-1 work">work</span>
+        <span class="lang sg-1 play">play</span>
+        <span class="lang sg-1 hack">hack</span>
+        <span class="lang sg-1 libre">libre</span>
+        <span class="lang sg-1 edu">edu</span>
+      </div> <!-- cats -->
+      {% endblock %}
+    </td> </tr>
+    </table>
+    <hr />
+
     <a href="{{site.url}}/index.html">
         <h1>{{site.name}}</h1>
     </a>

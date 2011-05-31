@@ -30,6 +30,8 @@ body {background-color:#f4f4f4; font-size:62.5%; line-height:28px; /* for RTL ad
 /* add a dividing border to the right or left simply by addiing one of these classes to a div */
 .borderRight{border-right:1px solid #222; margin-right:0px; padding-right:13px;}
 .borderLeft  {border-left:1px solid #222; margin-left:0px; padding-left:13px;}
+.borderTop  {border-top:1px solid #222; margin-top:0px; padding-top:13px;}
+.borderBottom  {border-bottom:1px solid #222; margin-bottom:0px; padding-bottom:13px;}
 
 /* CONTROLLER - optional */
 #controller{position:fixed; top:14px; right:14px; z-index:9999;}

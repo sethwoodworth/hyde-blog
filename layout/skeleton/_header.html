@@ -1,4 +1,15 @@
-<div id="header" class="sg-35">
+<div id="header" class="sg-35 sgParent">
+  <div id="lefthead" class="sg-5">
+  {% block context_nav %}
+  {% endblock %}
+
+
+  {% block breadcrumbs %}
+  {% include "skeleton/_breadcrumbs.html"%}
+  {% endblock %}
+  </div> <!-- lefthead -->
+
+  <div id="midhead" class="sg-24 borderLeft borderRight">
   <table width="100%">
     <tr> <td>
       <h1>Seth Woodworth<br />
@@ -18,19 +29,9 @@
     </td> </tr>
     </table>
     <hr />
+    {% block sitenav %}
+    {% include "skeleton/_site_nav.html" %}
+    {% endblock %}
 
-    <a href="{{site.url}}/index.html">
-        <h1>{{site.name}}</h1>
-    </a>
+  </div> <!-- midhead -->
 </div>
-
-{% block breadcrumbs %}
-{% include "skeleton/_breadcrumbs.html"%}
-{% endblock %}
-
-{% block context_nav %}
-{% endblock %}
-
-{% block sitenav %}
-{% include "skeleton/_site_nav.html" %}
-{% endblock %}

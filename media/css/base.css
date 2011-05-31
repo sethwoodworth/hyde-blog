@@ -1,6 +1,13 @@
-html { overflow-y: scroll; }
+html { 
+  overflow-y: scroll;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
 body { margin-top: 1.5em; }
-h1 { font-size: 3.5em; color: #666; }
+h1 { 
+  font-size: 4em; 
+  color: #666; 
+  font-weight: normal;
+}
 
 .expand_collapse_links { text-align: center; margin-bottom: 1.5em; display: none; }
 .expand_collapse_links a { color: #555; }
@@ -36,8 +43,17 @@ code { font-size: 90%; }
 .footer-badges a { color: #777; }
 .lang a {color: inherit; text-decoration: none;}
 .note { text-decoration: italic; color: #666; padding: 1em; }
+#sitenav li {
+  display: inline;
+}
 
 #blog-head p { font-size: 27px; text-align: center }
+#midhead, #content-mid { background-color: #FFFFE5; }
+#midhead {
+  margin-bottom: 0px;
+}
+
+
 /* this came with the stock template */
 
 ul { margin: 0; }

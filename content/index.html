@@ -1,14 +1,16 @@
 {% extends "_blogindex.html" %}
 
 {%hyde
-    title: "Blogging is the new participation"
+    title: ""
     created: 2011-05-24 00:00:05
     listing: True
 %}
 
 {% block content_body %}
 
-<div id="content-center" class="sg-24">
+<div id="content-left" class="sg-5">
+</div> <!-- content-left -->
+<div id="content-mid" class="sg-24 borderLeft borderRight">
   <h2>Recent Posts</h2>
 
 	{%recent_posts recents 5 %}
@@ -19,6 +21,8 @@
       <p>{% render_excerpt post %}</p>
 		{%endfor%}
 	</ul>
-</div> <!-- content-center -->
+</div> <!-- content-mid -->
+<div id="content-right" class="sg-5">
+</div> <!-- content-right -->
 
 {%endblock%}

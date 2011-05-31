@@ -44,11 +44,23 @@
 		<div id="wrapper"> <!-- for squaregrid.css -->
 		<div id="container"> <!-- for squaregrid.css -->
 
-			{% include "skeleton/_header.html" %}
+      <div style="border: 1px;" id="left" class="sg-4">
+      LEFT COL
+      </div> <!-- left -->
 
-			{% block content %}{% endblock %}
+      <div style="border: 1px;" id="center" class="sg-24 borderLeft borderRight">
+        {% include "skeleton/_header.html" %}
 
-			{% include "skeleton/_footer.html" %}
+        {% block content %}{% endblock %}
+
+        {% include "skeleton/_footer.html" %}
+
+        <div class="clear"></div>
+      </div> <!-- center -->
+      <div style="border: 1px;" id="right" class="sg-4">
+        RIGHT COL
+        <div class="clear"></div>
+      </div> <!-- right -->
 
 		</div> <!-- container -->
 		</div> <!-- wrapper -->

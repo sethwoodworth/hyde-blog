@@ -2,10 +2,11 @@ html {
   overflow-y: scroll;
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-body { margin-top: 1.5em; }
-h1 { 
+body { 
+  color: #463E34; 
+}
+#midhead h2 { 
   font-size: 4em; 
-  color: #666; 
   font-weight: normal;
 }
 
@@ -48,7 +49,7 @@ code { font-size: 90%; }
 }
 
 #blog-head p { font-size: 27px; text-align: center }
-#midhead, #content-mid { background-color: #FFFFE5; }
+#midhead, #content-mid { background-color: #FEFEFF; }
 #midhead {
   margin-bottom: 0px;
 }

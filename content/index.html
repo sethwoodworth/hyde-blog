@@ -1,4 +1,4 @@
-{% extends "_blogindex.html" %}
+{% extends "skeleton/_body.html" %}
 
 {%hyde
     title: ""
@@ -6,11 +6,9 @@
     listing: True
 %}
 
+
 {% block content_body %}
 
-<div id="content-left" class="sg-5">
-</div> <!-- content-left -->
-<div id="content-mid" class="sg-24 borderLeft borderRight">
   <h2>Recent Posts</h2>
 
 	{%recent_posts recents 5 %}
@@ -21,8 +19,5 @@
       <p>{% render_excerpt post %}</p>
 		{%endfor%}
 	</ul>
-</div> <!-- content-mid -->
-<div id="content-right" class="sg-5">
-</div> <!-- content-right -->
 
 {%endblock%}

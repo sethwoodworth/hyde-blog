@@ -1,26 +1,22 @@
 {% extends "skeleton/_base.html" %}
 
-{% block content %}
+{% block lefttitle %}
+    {{ page.title }}
+{% endblock %}
 
-<div id="content" class="sg-35 sgParent">
-<div id="content-left" class="sg-5">
-</div> <!-- content-left -->
-<div id="content-mid" class="sg-24 borderLeft borderRight">
+{% block content %}
+<div id="content" class="parent">
 
   {% block content_header %}
   <div id="content-header">
     <h1>{{ page.title }}</h1>
   </div>
-  {% endblock %}
+  {% endblock %} {# content_header #}
 
 
   {% block content_body %}
-  {% endblock %}
+  {% endblock %} {# content_body #}
 
-  {% endblock %}
-
-</div> <!-- content-mid -->
-<div id="content-right" class="sg-5">
-</div> <!-- content-right -->
 
 </div> <!-- content -->
+{% endblock %} {# block content #}

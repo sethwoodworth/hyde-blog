@@ -31,7 +31,8 @@
       $(document).ready(function(){ 
         $("#controller ul li a").click(function () { 
           var className = $(this).attr('class'); 
-          $('#wrapper').css("background-image", "url(/media/images/sg_grid_" + className + ".png)"); 
+          $('body').css("background-image", "url(/media/images/sg_grid_" + className + ".png)"); 
+          $('body').css("background-position", "center"); 
           $("#controller ul li").removeClass('selected'); 
           $(this).parent().addClass('selected');
         }); 
@@ -41,14 +42,21 @@
 	</head>
 
 	<body>
-		<div id="wrapper"> <!-- for squaregrid.css -->
-		<div id="container"> <!-- for squaregrid.css -->
+		<div id="main">
 
-      <div style="border: 1px;" id="left" class="sg-4">
-      LEFT COL
+      <div id="left" class="parent">
+        <div id="side-top">
+          <br />
+        </div> <!-- side-top -->
+        <div id="side-head">
+          <h4>
+            {% block lefttitle %}
+            {% endblock %}
+          </h4>
+        </div> <!-- side-content -->
       </div> <!-- left -->
 
-      <div style="border: 1px;" id="center" class="sg-24 borderLeft borderRight">
+      <div id="center" class="parent">
         {% include "skeleton/_header.html" %}
 
         {% block content %}{% endblock %}
@@ -57,16 +65,20 @@
 
         <div class="clear"></div>
       </div> <!-- center -->
-      <div style="border: 1px;" id="right" class="sg-4">
-        RIGHT COL
-        <div class="clear"></div>
+      <div id="right" class="parent">
+        <div id="side-top">
+          <br />
+        </div> <!-- side-top -->
+        <div id="side-content">
+          <h4>
+            {% block rightcontent %}
+            {% endblock %}
+          </h4>
+        </div> <!-- side-content -->
       </div> <!-- right -->
 
-		</div> <!-- container -->
-		</div> <!-- wrapper -->
-
+		</div> <!-- #main -->
 	</body>
-
 </html>
 
 {% endblock %}

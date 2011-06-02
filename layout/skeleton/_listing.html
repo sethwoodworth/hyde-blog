@@ -5,6 +5,17 @@
 
 {% block content_body %}
 
+  <h3>Recent Posts:</h3>
+
+	{% recent_posts recents 5 %}
+	<ul>
+  {% for post in recents %}
+    <h4><a href='{{ post.url }}'>{{ post.title }}</a></h4>
+    <p>{% render_excerpt post %} <a href='{{ post.url }}'>&hellip;</a></p>
+    <hr />
+  {%endfor%}
+	</ul>
+
 <div class="page-listing">
 	{% for node in page.node.walk %}
 		{% include "skeleton/_innerlisting.html" %}
@@ -13,4 +24,26 @@
 
 <div class="clear"></div>
 
-{% endblock %}
+{% endblock %} {# content_body #}
+
+{% block rightcontent %}
+Right Content
+<ul>
+</ul>
+{% for node in page.node.walk %}
+node
+<ul>
+  {% for list_page in node.pages %}
+  <li>
+    <a href="{{list_page.url}}">
+    {% with list_page.name_without_extension|remove_date_prefix|unslugify as default_title %}
+      {{list_page.title|default_if_none:default_title }}
+    {%endwith%}</a>
+    <span class="post-date">0{{list_page.created|date:"Y-m-d" }}  </span>
+
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+{% endblock %} {# rightcontent #}

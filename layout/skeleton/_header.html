@@ -1,26 +1,42 @@
-<div class="sg-8">
-<h2>Seth Woodworth<br />
-- Seth(ish)
-</h2>
-</div> <!-- sg-8 -->
-
-<div id="cats" class="sg-8 sgParent">
-  <span class="lang sg-1 work">work</span>
-  <span class="lang sg-1 play">play</span>
-  <span class="lang sg-1 hack">hack</span>
-  <span class="lang sg-1 libre">libre</span>
-  <span class="lang sg-1 edu">edu</span>
-</div> <!-- cats -->
-
-    {% block sitenav %}
-    {% include "skeleton/_site_nav.html" %}
+<div id="header" class="parent">
+  <div id="title">
+    {% block breadcrumbs %}
+    {% include "skeleton/_breadcrumbs.html"%}
     {% endblock %}
+    <br/>
+    <h2>Seth Woodworth</h2>
+    <h2>Sethish</h2>
+  </div> <!-- title -->
 
-    {% block context_nav %}
-    {% endblock %}
+  <div id="listcats">
+    <span class="work">work</span>
+    <span class="play">play</span>
+    <span class="hack">hack</span>
+    <span class="libre">libre</span>
+    <span class="edu">edu</span>
+  </div> <!-- cats -->
 
-  {% block breadcrumbs %}
-  {% include "skeleton/_breadcrumbs.html"%}
+  {% block sitenav %}
+  <div id="sitenav">
+    <ul> <!-- TODO: These links don't work -->
+      <li{% ifequal page.module site.module %} class="selected" {% endifequal %}>
+          <a href="{{site.listing_url}}">Home</a>
+      </li>    
+
+      <li{% ifequal page.module site.module %} class="selected" {% endifequal %}>
+          <a href="{{site.listing_url}}">Blog</a>
+      </li>    
+
+      <li{% ifequal page.module site.module %} class="selected" {% endifequal %}>
+          <a href="{{site.listing_url}}">Links</a>
+      </li>    
+
+    </ul>
+  </div> <!-- #sitenav -->
+  {% endblock %} {# endblock sitenav #}
+
+  {% block context_nav %}
   {% endblock %}
-    <hr />
 
+
+</div> <!-- #header -->

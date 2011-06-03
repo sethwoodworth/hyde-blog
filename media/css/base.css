@@ -63,7 +63,32 @@ div {
 
 #right {
   width: 112px; /* x4 28px spaces */
-  }1
+  }
+
+/* SECTION LEFT */
+#side-top {
+  height:     112px; /* four rows tall          */
+  width:      112px;  /* four columns wide      */
+  }
+
+#side-head {
+  position:   fixed;
+  margin-top: 140px;  /* five rows from the top */
+  width:      112px;  /* four columns wide      */
+  }
+
+#side-content {
+  margin-top: 140px;  /* five rows from the top */
+  width:      112px;  /* four columns wide      */
+
+  }
+/* LISTING STYLING */
+
+/* POST STYLING */
+#content-header {
+  }
+#post-content {
+  }
 
 .parent {
   margin: 0px; /* on any container that nests */
@@ -109,19 +134,46 @@ ul.breadcrumbs {
   color:        #555;
   }
 
-#listcats span { padding: 3px; }
+div.section div.title {
+  background-color: #EEE;
+  float:            right;
+  border:           #ccc 1px solid;
+  width:            616px;
+  }
+
+#title.span {
+  float:  right;
+  }
 
 span.work   {
   background: #A8A8D6;
   padding:    3px;
   width:      28px;
   }
-span.play   { background: #A8D6CD }
-span.hack   { background: #BBD6A8 }
-span.libre  { background: #D6BBA8 }
-span.edu    { background: #D6A8CD }
+span.play   { 
+  background: #A8D6CD;
+  padding:    3px;
+  width:      28px;
+  }
+span.hack   { 
+  background: #BBD6A8;
+  padding:    3px;
+  width:      28px;
+  }
+span.libre  { 
+  background: #D6BBA8;
+  padding:    3px;
+  width:      28px;
+  }
+span.edu    { 
+  background: #D6A8CD;
+  padding:    3px;
+  width:      28px;
+  }
 
-span.post-date { color: #808094 }
+span.date       { background-color: #A8D6CD }
+span.post-date  { color: #808094 }
+
 
 a.work    { background-color: #A8A8D6; }
 a.play    { background-color: #A8D6CD; }
@@ -130,23 +182,6 @@ a.libre   { background-color: #D6BBA8; }
 a.edu     { background-color: #D6A8CD; }
 a.out     { background-color: #FAFDFF; }
 
-/* SECTION LEFT */
-#side-top {
-  height:     112px; /* four rows tall          */
-  width:      112px;  /* four columns wide      */
-  }
-
-#side-head {
-  position:   fixed;
-  margin-top: 140px;  /* five rows from the top */
-  width:      112px;  /* four columns wide      */
-  }
-
-#side-content {
-  margin-top: 140px;  /* five rows from the top */
-  width:      112px;  /* four columns wide      */
-
-  }
 
 a {
   color: #4D6680;
@@ -157,13 +192,13 @@ a:hover {
   text-decoration: underline;
   }
 
-/* LISTING STYLING */
 
-/* POST STYLING */
-#content-header {
+/* Frontpage */
+.section h3 {
+  display:      inline;
+  margin-left:  14px;
   }
-#post-content {
-  }
+
 
 /*
 .expand_collapse_links { text-align: center; margin-bottom: 1.5em; display: none; }

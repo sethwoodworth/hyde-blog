@@ -109,6 +109,23 @@ div {
   font-weight: normal;
   }
 
+#intro {
+  width:      588px;
+  margin-top: 28px;
+}
+
+div#intro p {
+  font-size:  2.75em;
+  text-align: center;
+  font-style: italic;
+  }
+
+div.space {
+  width:      28px;
+  margin-top: 28px;
+}
+
+
 ul.breadcrumbs {
   list-style-type: none;
   padding: 0;
@@ -124,7 +141,18 @@ ul.breadcrumbs {
 .breadcrumbs a:hover { text-decoration: underline; }
 .breadcrumbs .separator { color: #4f6072; }
 
-#sitenav li { display: inline; }
+div#sitenav li, div#sitenav h4 {
+  display:      inline;
+  margin-right: 7px;
+  text-align:   center;
+  }
+/*
+#sitenav {
+    text-align: center;
+    border-bottom: .2em solid #4d6680;
+    padding-bottom: 0.2em;
+}
+*/
 
 /* category stuff */
 #listcats {
@@ -141,6 +169,19 @@ div.section div.title {
   width:            616px;
   }
 
+div.section img {
+  /* center images in column */
+  /* TODO: apply to all images? */
+  display:  block;
+  margin:   0 auto;
+  }
+
+div.section img.right {
+  border:     2px solid black;
+  float:      right;
+  margin:     10px;
+  }
+
 #title.span {
   float:  right;
   }
@@ -150,22 +191,22 @@ span.work   {
   padding:    3px;
   width:      28px;
   }
-span.play   { 
+span.play   {
   background: #A8D6CD;
   padding:    3px;
   width:      28px;
   }
-span.hack   { 
+span.hack   {
   background: #BBD6A8;
   padding:    3px;
   width:      28px;
   }
-span.libre  { 
+span.libre  {
   background: #D6BBA8;
   padding:    3px;
   width:      28px;
   }
-span.edu    { 
+span.edu    {
   background: #D6A8CD;
   padding:    3px;
   width:      28px;
@@ -197,6 +238,10 @@ a:hover {
 .section h3 {
   display:      inline;
   margin-left:  14px;
+  }
+
+a.more {
+  float:  right;
   }
 
 
@@ -259,11 +304,6 @@ a { color: #55757B; }
 
 
 /*
-#sitenav {
-    text-align: center;
-    border-bottom: .2em solid #4d6680;
-    padding-bottom: 0.2em;
-}
 
 #sitenav ul { list-style-type: none; }
 

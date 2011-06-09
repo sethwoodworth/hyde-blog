@@ -20,15 +20,15 @@
   <div id="sitenav">
     <ul> <!-- TODO: These links don't work -->
       <li{% ifequal page.module site.module %} class="selected" {% endifequal %}>
-          <a href="{{site.listing_url}}">Home</a>
+          <h4><a href="/">Home</a></h4>
       </li>    
 
       <li{% ifequal page.module site.module %} class="selected" {% endifequal %}>
-          <a href="{{site.listing_url}}">Blog</a>
+          <h4><a href="/blog">Blog</a></h4>
       </li>    
 
-      <li{% ifequal page.module site.module %} class="selected" {% endifequal %}>
-          <a href="{{site.listing_url}}">Links</a>
+      <li>
+          <h4><a href="http://twitter.com/sethish">Twitter</a></h4>
       </li>    
 
     </ul>

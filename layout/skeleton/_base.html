@@ -53,7 +53,7 @@
             {% block lefttitle %}
             {% endblock %}
           </h4>
-        </div> <!-- side-content -->
+        </div> <!-- side-head -->
       </div> <!-- left -->
 
       <div id="center" class="parent">
@@ -70,10 +70,8 @@
           <br />
         </div> <!-- side-top -->
         <div id="side-content">
-          <h4>
-            {% block rightcontent %}
-            {% endblock %}
-          </h4>
+          {% block rightcontent %}
+          {% endblock %}
         </div> <!-- side-content -->
       </div> <!-- right -->
 
